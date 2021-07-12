@@ -6,12 +6,12 @@ describe('LoginComponent', () => {
   let component: LoginComponent;
   let service : AuthService;
 
-  beforeEach(() => { (1)
+  beforeEach(() => { 
     service = new AuthService();
     component = new LoginComponent(service);
   });
 
-  afterEach(() => { (2)
+  afterEach(() => { 
     localStorage.removeItem('token');
   });
 
