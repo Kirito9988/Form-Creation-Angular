@@ -21,7 +21,7 @@ describe('LoginComponent', () => {
   });
 
   it('needsLogin returns false when the user has been authenticated', () => {
-    localStorage.setItem('token', '12345'); (3)
+    localStorage.setItem('token', '12345');
     expect(component.needsLogin()).toBeFalsy();
   });
 });
