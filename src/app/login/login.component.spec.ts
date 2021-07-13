@@ -14,7 +14,7 @@ describe('LoginComponent', () => {
   afterEach(() => { 
     localStorage.removeItem('token');
   });
-
+ 
 
   it('needsLogin returns true when the user has not been authenticated', () => {
     expect(component.needsLogin()).toBeTruthy();
