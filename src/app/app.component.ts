@@ -59,4 +59,8 @@ constructor(private service : AppService){
       ]),
     })
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 354a4c337441a66c3a3b9b8828ee827920746154
