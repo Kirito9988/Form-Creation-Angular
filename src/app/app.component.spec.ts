@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 import { ReactiveFormsModule, Validators, FormBuilder } from '@angular/forms';
-=======
->>>>>>> 354a4c337441a66c3a3b9b8828ee827920746154
+
 import { By, by } from 'protractor';
 import { TestBed, fakeAsync, tick, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -10,13 +8,9 @@ import {  AppComponent } from './app.component';
 import { AppService } from './app.service';
 import * as Rx from 'rxjs';
 import { delay } from "rxjs/operators";
-<<<<<<< HEAD
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
 // import { SuccessAlertComponent } from './success-alert/success-alert.component';
 // import { WarningAlertComponent } from './warning-alert/warning-alert.component';
-=======
-import { SuccessAlertComponent } from './success-alert/success-alert.component';
-import { WarningAlertComponent } from './warning-alert/warning-alert.component';
->>>>>>> 354a4c337441a66c3a3b9b8828ee827920746154
 
 
 describe('AppComponent', () => {
@@ -25,20 +19,12 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         HttpClientTestingModule,
-<<<<<<< HEAD
         ReactiveFormsModule,
       ],
       declarations: [
         AppComponent,
         // WarningAlertComponent,
-        // SuccessAlertComponent
-=======
-      ],
-      declarations: [
-        AppComponent,
-        WarningAlertComponent,
-        SuccessAlertComponent
->>>>>>> 354a4c337441a66c3a3b9b8828ee827920746154
+         SuccessAlertComponent,
       ],
       providers : [
         AppService
@@ -102,31 +88,17 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('head').textContent).toContain('angular test');
   });
 
-<<<<<<< HEAD
   // it(`should render 'This is a warning, you are in danger!'`, () => {
   //   const fixture = TestBed.createComponent(WarningAlertComponent);
   //   const compiled = fixture.debugElement.nativeElement;
   //   expect(compiled.querySelector('p').textContent).toEqual('This is a warning, you are in danger!');
   // })
 
-  // it(`should render 'You are so successful!'`, () => {
-  //   const fixture = TestBed.createComponent(SuccessAlertComponent);
-  //   const compiled = fixture.debugElement.nativeElement;
-  //   expect(compiled.querySelector('p').textContent).toEqual('You are so successful!');
-  // })
-=======
-  it(`should render 'This is a warning, you are in danger!'`, () => {
-    const fixture = TestBed.createComponent(WarningAlertComponent);
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('p').textContent).toEqual('This is a warning, you are in danger!');
-  })
-
   it(`should render 'You are so successful!'`, () => {
     const fixture = TestBed.createComponent(SuccessAlertComponent);
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('p').textContent).toEqual('You are so successful!');
   })
->>>>>>> 354a4c337441a66c3a3b9b8828ee827920746154
   it(`form should be invalid`, () => {
     let fixture = TestBed.createComponent(AppComponent);
     let comp = fixture.componentInstance;
